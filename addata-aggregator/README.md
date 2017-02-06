@@ -19,6 +19,7 @@ The examples in this repository can be built and executed from the root director
     --stagingLocation= <STAGINGLOCATION>
     --runner=BlockingDataflowPipelineRunner 
     --dataset=<DATASET>
+    --input=<INPUTSTORAGELOCATION>
 
    
 This will use the latest release of the Cloud Dataflow SDK for Java pulled from the
