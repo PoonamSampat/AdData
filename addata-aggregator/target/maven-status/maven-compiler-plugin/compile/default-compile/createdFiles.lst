@@ -1,0 +1,7 @@
+com\google\cloud\dataflow\addata\AdDataPipeline$GroupByDate.class
+com\google\cloud\dataflow\addata\AdDataPipeline$Options.class
+com\google\cloud\dataflow\addata\AdDataPipeline$WriteData.class
+com\google\cloud\dataflow\addata\AdDataPipeline.class
+com\google\cloud\dataflow\addata\AdDataPipeline$GroupByDate$1.class
+com\google\cloud\dataflow\addata\AdDataPipeline$AdInfo.class
+com\google\cloud\dataflow\addata\AdDataPipeline$ParseDataFn.class
