@@ -33,23 +33,23 @@ The Cloud Storage location should be entered in the form of
 
 ##Run these queries in the BQ console to get the results.
 
-# Per Day, per ad impression count.
+Per Day, per ad impression count.
 
     SELECT SUM(CLICK_COUNT) AS Total_Impression ,ad_id FROM [project ID.dataset.20170101] where event_type = 'Impression' group by ad_id
 
-# Per Day, per ad click count.
+Per Day, per ad click count.
 
     SELECT SUM(CLICK_COUNT) AS Total_Click ,ad_id FROM [project ID.dataset.20170101] where event_type = 'Click' group by ad_id
 
-# Ad with highest hit per day 
+Ad with highest hit per day 
 
     SELECT SUM(click_count) as Impression_count, ad_id FROM [project ID.dataset.20170102] where event_type ='Impression' group by ad_id ORDER BY Impression_count DESC LIMIT 1
 
-# Ad with least hit per day
+Ad with least hit per day
 
     SELECT SUM(click_count) as Impression_count, ad_id FROM [project ID.dataset.20170102] where event_type ='Impression' group by ad_id ORDER BY Impression_count ASC LIMIT 1
 
-# Click count across tables. 
+Click count across tables. 
 
     SELECT SUM(click_count) as Impression_count, ad_id FROM [project ID.dataset.20170101],[project ID.dataset.20170102] where event_type ='Impression' group by ad_id ORDER BY Impression_count ASC
 
