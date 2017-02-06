@@ -54,3 +54,5 @@ Click count across tables.
 
     SELECT SUM(click_count) as Impression_count, ad_id FROM [project ID.dataset.20170101],[project ID.dataset.20170102] where event_type ='Impression' group by ad_id ORDER BY Impression_count ASC
 
+#Future Enhancements
+1. Templatise dataflow.
